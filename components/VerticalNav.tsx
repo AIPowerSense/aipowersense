@@ -1,11 +1,12 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, User, Zap, Mail, Menu, X, ArrowRight } from "lucide-react";
+import { Home, User, Zap, Mail, Menu, X, ArrowRight, Cpu } from "lucide-react";
 
 const navItems = [
   { to: "/", icon: Home, label: "Home" },
   { to: "/about", icon: User, label: "About" },
+  { to: "/voltcore", icon: Cpu, label: "VoltCore" },
   { to: "/solutions", icon: Zap, label: "Solutions" },
   { to: "/contact", icon: Mail, label: "Contact" },
 ];

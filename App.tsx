@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
+import VoltCore from "./pages/VoltCore";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -38,6 +39,7 @@ const AnimatedRoutes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/voltcore" element={<VoltCore />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

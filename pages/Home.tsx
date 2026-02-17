@@ -361,7 +361,7 @@ const Home = () => {
             </Link>
 
             {/* Secondary Button */}
-            <a href="https://app.aipowersense.com/" target="_blank" rel="noopener noreferrer">
+            <Link to="/voltcore">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -370,7 +370,7 @@ const Home = () => {
                   <span className="text-white/80 group-hover:text-white transition-colors">Get Started Today</span>
                 </div>
               </motion.div>
-            </a>
+            </Link>
           </motion.div>
 
           {/* Status Badge */}
