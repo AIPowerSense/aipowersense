@@ -12,31 +12,27 @@ const VoltCore = () => {
 
   const architectureLayers = [
     {
-      title: "Real-Time Ingestion",
-      subtitle: "NVIDIA Morpheus",
-      description: "Sub-second data streaming pipeline processing 2.5B data points/sec",
-      features: ["Live anomaly detection", "Multi-protocol support (MQTT, APIs)", "99.9% uptime"],
+      title: "Real-Time Data Ingestion",
+      description: "Sub-second data streaming pipeline processing 2.5B data points/sec with live anomaly detection",
+      features: ["Multi-protocol support (MQTT, APIs)", "Live anomaly detection", "99.9% uptime"],
       gradient: "from-purple-500/20 to-pink-500/20"
     },
     {
-      title: "Predictive Intelligence",
-      subtitle: "NVIDIA RAPIDS + NeMo",
-      description: "GPU-accelerated training and deep learning for demand forecasting",
-      features: ["cuML for ML models", "cuDF for data processing", "LSTM/Transformer networks"],
+      title: "GPU-Accelerated Analytics",
+      description: "High-performance data processing and ML model training for predictive energy forecasting",
+      features: ["100x faster data processing", "Advanced ML models", "Time-series forecasting"],
       gradient: "from-blue-500/20 to-purple-500/20"
     },
     {
-      title: "Intelligence Layer",
-      subtitle: "NVIDIA NeMo LLM",
-      description: "Natural language insights transforming raw data into human-readable reports",
-      features: ["Automated report generation", "Contextual recommendations", "Actionable insights"],
+      title: "Intelligent Insights",
+      description: "Transform raw data into human-readable, actionable recommendations and reports",
+      features: ["Automated report generation", "Contextual recommendations", "Natural language insights"],
       gradient: "from-cyan-500/20 to-blue-500/20"
     },
     {
-      title: "Production Deployment",
-      subtitle: "Triton + TensorRT",
-      description: "Unified inference server with optimized latency and throughput",
-      features: ["Model serving", "Real-time inference", "Multi-model orchestration"],
+      title: "Optimized Inference",
+      description: "Production-ready model serving with ultra-low latency and high throughput",
+      features: ["Real-time inference", "Multi-model orchestration", "Optimized performance"],
       gradient: "from-green-500/20 to-cyan-500/20"
     }
   ];
@@ -211,10 +207,10 @@ const VoltCore = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-              Blueprint: GPU-Accelerated Architecture
+              Four-Layer Intelligence Pipeline
             </h2>
             <p className="text-foreground/70 max-w-2xl mx-auto">
-              A unified pipeline leveraging NVIDIA's most powerful SDKs for end-to-end energy intelligence
+              From real-time data ingestion to actionable intelligence, every layer is optimized for enterprise performance
             </p>
           </motion.div>
 
@@ -236,8 +232,7 @@ const VoltCore = () => {
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-display font-bold mb-1">{layer.title}</h3>
-                        <p className="text-sm font-tech text-primary mb-3">{layer.subtitle}</p>
+                        <h3 className="text-2xl font-display font-bold mb-3">{layer.title}</h3>
                         <p className="text-foreground/80 mb-4">{layer.description}</p>
                         <div className="flex flex-wrap gap-2">
                           {layer.features.map((feature, fidx) => (
@@ -367,9 +362,9 @@ const VoltCore = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-display font-bold mb-2">Data Ingestion (Morpheus)</h4>
+                  <h4 className="font-display font-bold mb-2">Data Ingestion</h4>
                   <p className="text-foreground/70">
-                    Morpheus ingests live MQTT feeds from substations. Forecast: Peak demand at 3 PM. Anomaly detected: Substation B shows 15% over-voltage.
+                    Live MQTT feeds from substations are ingested in real-time. Forecast: Peak demand at 3 PM. Anomaly detected: Substation B shows 15% over-voltage.
                   </p>
                 </div>
               </div>
@@ -381,9 +376,9 @@ const VoltCore = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-display font-bold mb-2">Analysis & Prediction (RAPIDS)</h4>
+                  <h4 className="font-display font-bold mb-2">Analysis & Prediction</h4>
                   <p className="text-foreground/70">
-                    RAPIDS processes terabytes of historical data to confirm anomaly patterns and forecast demand surge. cuML trains predictive models in seconds. cuDF analyzes time-series data 100x faster than traditional systems.
+                    Terabytes of historical data are processed to confirm anomaly patterns and forecast demand surge. ML models train in seconds and analyze time-series data 100x faster than traditional systems.
                   </p>
                 </div>
               </div>
@@ -395,9 +390,9 @@ const VoltCore = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-display font-bold mb-2">Human-Readable Insights (NeMo LLM)</h4>
+                  <h4 className="font-display font-bold mb-2">Human-Readable Insights</h4>
                   <p className="text-foreground/70">
-                    NeMo generates: "NEXUS AI forecasts a peak demand spike at 3 PM. To optimize costs, recommend pre-cooling commercial buildings starting at 1 PM. Substation B anomaly: maintenance ticket auto-generated."
+                    System generates: "NEXUS AI forecasts a peak demand spike at 3 PM. To optimize costs, recommend pre-cooling commercial buildings starting at 1 PM. Substation B anomaly: maintenance ticket auto-generated."
                   </p>
                 </div>
               </div>
@@ -409,9 +404,9 @@ const VoltCore = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-display font-bold mb-2">Production Deployment (Triton + TensorRT)</h4>
+                  <h4 className="font-display font-bold mb-2">Production Deployment</h4>
                   <p className="text-foreground/70">
-                    All models (Morpheus pipeline, RAPIDS models, NeMo LLM) deployed on a single unified Triton Inference Server, optimized with TensorRT for lowest latency and highest throughput.
+                    All models are deployed on a unified inference platform optimized for lowest latency and highest throughput, enabling real-time automated actions.
                   </p>
                 </div>
               </div>
@@ -460,15 +455,7 @@ const VoltCore = () => {
                 Schedule Demo
               </motion.button>
             </Link>
-            <Link to="/contact">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border border-accent/30 rounded-full font-tech font-semibold hover:border-accent/60 hover:bg-accent/5 transition-all"
-              >
-                Contact Sales
-              </motion.button>
-            </Link>
+            
           </div>
         </div>
       </motion.section>

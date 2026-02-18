@@ -112,7 +112,7 @@ const Home = () => {
 
     let rafId: number | null = null;
     let lastTime: number | null = null;
-    const speed = 0.08; // px per ms (~1.3px per frame)
+    const speed = 0.18; // px per ms (~3px per frame)
 
     const step = (time: number) => {
       if (!lastTime) lastTime = time;
@@ -361,7 +361,7 @@ const Home = () => {
             </Link>
 
             {/* Secondary Button */}
-            <a href="https://app.aipowersense.com/" target="_blank" rel="noopener noreferrer">
+            <Link to="/voltcore">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -370,7 +370,7 @@ const Home = () => {
                   <span className="text-white/80 group-hover:text-white transition-colors">Get Started Today</span>
                 </div>
               </motion.div>
-            </a>
+            </Link>
           </motion.div>
 
           {/* Status Badge */}
@@ -1279,6 +1279,7 @@ const Home = () => {
                               <p className="text-foreground/60 text-sm leading-relaxed">{item.desc}</p>
                               <div className="mt-4 flex items-center gap-3">
                                 <div className="h-1 w-12 rounded-full" style={{ background: `linear-gradient(90deg, rgba(${item.rgb},0.9), rgba(${item.rgb},0.4))` }} />
+                                <button className="ml-auto px-3 py-1.5 text-xs rounded-lg bg-white/5 hover:bg-white/8">Learn more</button>
                               </div>
                             </div>
                           </div>
