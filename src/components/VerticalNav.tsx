@@ -66,9 +66,7 @@ const VerticalNav = () => {
 
           {/* Get Started Button */}
           <motion.a
-            href="https://app.aipowersense.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/voltcore"
             className="relative mt-2 overflow-hidden group w-14"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
